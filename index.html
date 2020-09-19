@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/drawer.css">
+</head>
+<body>
+  <div class="drawer">
+    <ul>
+      <li><a>Новости</a></li>
+      <li><a>Мнение</a></li>
+      <li><a>Статьи</a></li>
+      <li><a>Кто мы?</a></li>
+    </ul>
+  </div>
+  <div class="block" id="hero">
+    <nav class="top">
+      <h1>The Newest</h1>
+      <span></span>
+      <div>
+        <a>Новости</a>
+        <a>Мнение</a>
+        <a>Статьи</a>
+        <a>Кто мы?</a>
+      </div>
+      <div class="hamburger">
+        <svg version="1.1" onclick="ochmoq()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	        viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;" xml:space="preserve">
+          <style>
+            :root {
+              --clr: white;
+            }
+            path {
+              fill: var(--clr);
+            }
+          </style>
+          <script>
+            // <![CDATA[
+            window.addEventListener('DOMContentLoaded', () => {
+              function getColor () {
+                const clr = getComputedStyle(document.documentElement).getPropertyValue('--clr');
+                if (clr == ' white') {
+                  return '#ff6600';
+                } else {
+                  return ' white';
+                }
+              }
+              
+              document.querySelector('svg').addEventListener('click', (e) => {
+                document.documentElement.style.setProperty('--clr', getColor());
+              });
+            })
+            // ]]>
+          </script>
+          <path class="st0" d="M368,207.7H16c-8.8,0-16-7.2-16-16s7.2-16,16-16h352c8.8,0,16,7.2,16,16S376.8,207.7,368,207.7z"/>
+          <path class="st0" d="M368,85H16C7.2,85,0,77.8,0,69s7.2-16,16-16h352c8.8,0,16,7.2,16,16S376.8,85,368,85z"/>
+          <path class="st0" d="M368,330.3H16c-8.8,0-16-7.2-16-16s7.2-16,16-16h352c8.8,0,16,7.2,16,16S376.8,330.3,368,330.3z"/>
+        </svg>
+      </div>
+    </nav>
+
+    <div class="middle">
+      <div class="carousel">
+        <div class="card" id="card0" data-index="0">
+          <div class="upper">
+            <h2>Fishing</h2>
+            <h4>Azizbek Muminoff</h4>
+          </div>
+          <div class="form">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit expedita illum iste repellat suscipit ullam nobis explicabo nemo iure quidem, non sapiente tenetur! Illo exercitationem, officiis vitae quaerat velit dolores.</p>
+            <div class="btn"><button>READ</button></div>
+          </div>
+        </div>
+        <div class="card" id="card1" data-index="1">
+          <div class="upper">
+            <h2>Plov</h2>
+            <h4>Azizbek Muminoff</h4>
+          </div>
+          <div class="form">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit expedita illum iste repellat suscipit ullam nobis explicabo nemo iure quidem, non sapiente tenetur! Illo exercitationem, officiis vitae quaerat velit dolores.</p>
+            <div class="btn"><button>READ</button></div>
+          </div>
+        </div>
+        <div class="card" id="card2" data-index="2">
+          <div class="upper">
+            <h2>Wow</h2>
+            <h4>Azizbek Muminoff</h4>
+          </div>
+          <div class="form">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit expedita illum iste repellat suscipit ullam nobis explicabo nemo iure quidem, non sapiente tenetur! Illo exercitationem, officiis vitae quaerat velit dolores].</p>
+            <div class="btn"><button>READ</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block" id="news"></div>
+
+  <div class="block" id="team">
+    <h1>НАША КОМАНДА</h1>
+    <div class="aboutCarousel" >
+      <div class="slide" data-index="1" id="slide1">
+        <h2>writer</h2>
+        <h2>Zevara Matmuradova</h2>
+      </div>
+      <div class="slide" data-index="2" id="slide2">
+        <h2>designer</h2>
+        <h2>Aziz Muminoff</h2>
+      </div>
+      <div class="slide" data-index="3" id="slide3">
+        <h2>writer</h2>
+        <h2>Laylo Mirjalilova</h2>
+      </div>
+      <div class="slide" data-index="4" id="slide4">
+        <h2>writer</h2>
+        <h2>Nonna Karakhanova</h2>
+      </div>
+      <div class="slide" data-index="5" id="slide5">
+        <h2>writer</h2>
+        <h2>Nigina Khashim</h2>
+      </div>
+      <div class="slide" data-index="6" id="slide6">
+          <h2>writer</h2>
+          <h2>Nonna Karakhanova</h2>
+      </div>
+      <div class="slide" data-index="7" id="slide7">
+          <h2>writer</h2>
+          <h2>Nonna Karakhanova</h2>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/carousel.js"></script>
+  <script src="js/drawer.js"></script>
+</body>
+</html>

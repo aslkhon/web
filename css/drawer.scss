@@ -1,0 +1,25 @@
+.drawer {
+  position: fixed;
+  background-color: white;
+  box-shadow: 0vw 0vh 0px rgba(#000, 0.3);
+  height: 90vh;
+  transform: translateY(-90vh);
+  width: 100vw;
+  z-index: 3;
+  transition: all 0.5s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    list-style-type: none;
+    padding: 0px;
+    font-family: 'Bebas Neue Cyrillic';
+    color: #ff6600;
+    font-size: 2em;
+
+    li {
+      margin: 1em 0em;
+    }
+  }
+}

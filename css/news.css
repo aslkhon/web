@@ -1,0 +1,30 @@
+.container {
+  background-color: white;
+  height: 70vh;
+  margin: auto;
+}
+
+@media (min-width: 1600px) {
+  .container {
+    width: 70vw;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1599px) {
+  .container {
+    width: 75vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+  .container {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 90vw;
+  }
+}
+/*# sourceMappingURL=news.css.map */

@@ -1,0 +1,18 @@
+.container {
+  background-color: white;
+  height: 70vh;
+  margin: auto;
+
+  @media (min-width: 1600px) {
+    width: 70vw;
+  }
+  @media (min-width: 960px) and (max-width: 1599px) {
+    width: 75vw;
+  }
+  @media (min-width: 768px) and (max-width: 959px) {
+    width: 80vw;
+  }
+  @media (max-width: 767px) {
+    width: 90vw;
+  }
+}
